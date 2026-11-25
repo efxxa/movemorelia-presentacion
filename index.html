@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MoveMorelia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap">
+<style>[hidden]{display:none!important}img{max-width:100%}</style>
+<link rel="stylesheet" href="film.css">
+</head>
+<body>
+<div id="wrap">
+  <div id="stage" role="application" aria-label="Presentación MoveMorelia. Usa las flechas o da clic para avanzar.">
+    <div id="glow"></div>
+    <div id="vp"><div id="cam"><div id="world"></div></div></div>
+    <div id="dimmer"></div>
+    <div id="vig"></div>
+    <div id="scrim"></div>
+    <div id="hud">
+      <div id="chip"></div>
+      <div id="cap" aria-live="polite"></div>
+      <div id="hint">Clic o → para avanzar · ← regresar · N notas · F pantalla completa · 1–6 ir a cada parte</div>
+    </div>
+    <div id="bar"></div>
+    <div id="notes" hidden></div>
+    <div id="ctrl">
+      <button id="bPrev" type="button" aria-label="Anterior">‹</button>
+      <span id="cnt"></span>
+      <button id="bNext" type="button" aria-label="Siguiente">›</button>
+      <button id="bNotes" type="button">Notas</button>
+      <button id="bFs" type="button" aria-label="Pantalla completa">⤢</button>
+    </div>
+  </div>
+</div>
+<script src="ui.js"></script>
+<script src="engine.js"></script>
+<script src="steps.js"></script>
+</body>
+</html>
